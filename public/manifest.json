@@ -1,0 +1,21 @@
+{
+  "name": "WebToolBox - 100% In-Browser Online Tools",
+  "short_name": "WebToolBox",
+  "description": "60+ Free Online Tools for Developers, Writers, Designers & Creators. 100% In-Browser & Private.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#6366f1",
+  "icons": [
+    {
+      "src": "/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

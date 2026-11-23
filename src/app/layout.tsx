@@ -79,6 +79,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: siteConfig.url,
   },
+  manifest: '/manifest.json',
 };
 
 export default function RootLayout({
