@@ -54,7 +54,7 @@ export default function ImagesToPdf() {
       }
 
       const pdfBytes = await pdf.save();
-      const blob = new Blob([pdfBytes], { type: 'application/pdf' });
+      const blob = new Blob([pdfBytes as any], { type: 'application/pdf' });
       setPdfUrl(URL.createObjectURL(blob));
     } catch (err: any) {
       alert(`PDF conversion error: ${err.message}`);

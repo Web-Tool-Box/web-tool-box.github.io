@@ -50,7 +50,7 @@ export default function PdfMerge() {
       }
 
       const mergedPdfBytes = await mergedPdf.save();
-      const blob = new Blob([mergedPdfBytes], { type: 'application/pdf' });
+      const blob = new Blob([mergedPdfBytes as any], { type: 'application/pdf' });
       setMergedBlobUrl(URL.createObjectURL(blob));
     } catch (err: any) {
       alert(`Error merging PDFs: ${err.message}`);

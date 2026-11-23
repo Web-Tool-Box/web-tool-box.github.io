@@ -32,7 +32,7 @@ export default function PdfCompress() {
       const optimizedBytes = await pdf.save({ useObjectStreams: true });
 
       setCompressedSize(optimizedBytes.length);
-      const blob = new Blob([optimizedBytes], { type: 'application/pdf' });
+      const blob = new Blob([optimizedBytes as any], { type: 'application/pdf' });
       setCompressedBlobUrl(URL.createObjectURL(blob));
     } catch (err: any) {
       alert(`PDF optimization notice: ${err.message}`);
