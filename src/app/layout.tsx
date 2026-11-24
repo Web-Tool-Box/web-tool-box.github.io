@@ -124,27 +124,31 @@ export default function RootLayout({
           }}
         />
 
-        {/* Optional GA4 placeholder */}
-        {siteConfig.analytics.gaId && (
-          <>
-            <script
-              async
-              src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.analytics.gaId}`}
-            />
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-                  gtag('config', '${siteConfig.analytics.gaId}');
-                `,
-              }}
-            />
-          </>
-        )}
+        {/* Google Tag Manager / Analytics */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtm.js?id=GTM-TWGZDH52"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+            `,
+          }}
+        />
       </head>
       <body className="flex flex-col min-h-screen">
+        {/* Google Tag Manager (noscript fallback) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-TWGZDH52"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

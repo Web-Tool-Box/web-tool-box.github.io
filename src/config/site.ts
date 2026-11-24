@@ -21,6 +21,7 @@ export const siteConfig = {
   },
   analytics: {
     gaId: process.env.NEXT_PUBLIC_GA_ID || '',
+    gtmId: process.env.NEXT_PUBLIC_GTM_ID || 'GTM-TWGZDH52',
     gscVerification: process.env.NEXT_PUBLIC_GSC_VERIFICATION || '',
   },
 };
