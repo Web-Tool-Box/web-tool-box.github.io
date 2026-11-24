@@ -1,7 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
-import { Wrench, ShieldCheck, Heart, Github } from 'lucide-react';
+import { ShieldCheck, Heart, Github } from 'lucide-react';
 import { CATEGORIES, siteConfig } from '@/config/site';
+import { Logo } from '@/components/common/Logo';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -12,13 +13,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 mb-12">
           {/* Brand & Mission */}
           <div className="lg:col-span-2 space-y-4">
-            <Link href="/" className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-600 to-purple-600 flex items-center justify-center text-white shadow-md">
-                <Wrench className="w-4 h-4" />
-              </div>
-              <span className="font-black text-xl tracking-tight text-slate-900 dark:text-white">
-                Web<span className="text-indigo-600 dark:text-indigo-400">ToolBox</span>
-              </span>
+            <Link href="/" aria-label="WebToolBox Home">
+              <Logo size="md" />
             </Link>
             <p className="text-sm leading-relaxed max-w-sm">
               Your all-in-one suite of 60+ fast, modern, and 100% private online tools.

@@ -2,9 +2,10 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Search, Wrench, Menu, X, Shield, Sparkles } from 'lucide-react';
+import { Search, Menu, X } from 'lucide-react';
 import { ThemeToggle } from '@/components/common/ThemeToggle';
 import { SearchModal } from '@/components/common/SearchModal';
+import { Logo } from '@/components/common/Logo';
 import { CATEGORIES, siteConfig } from '@/config/site';
 
 export function Header() {
@@ -28,13 +29,8 @@ export function Header() {
       <header className="sticky top-0 z-40 w-full backdrop-blur-md bg-white/80 dark:bg-slate-950/80 border-b border-slate-200 dark:border-slate-800 transition-colors">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-purple-500 flex items-center justify-center text-white shadow-md shadow-indigo-500/20 group-hover:scale-105 transition-transform">
-              <Wrench className="w-5 h-5" />
-            </div>
-            <span className="font-black text-xl tracking-tight text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
-              Web<span className="text-indigo-600 dark:text-indigo-400">ToolBox</span>
-            </span>
+          <Link href="/" aria-label="WebToolBox Home">
+            <Logo size="md" />
           </Link>
 
           {/* Quick Search Button (Desktop) */}
