@@ -32,14 +32,9 @@ export function Header() {
             <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-purple-500 flex items-center justify-center text-white shadow-md shadow-indigo-500/20 group-hover:scale-105 transition-transform">
               <Wrench className="w-5 h-5" />
             </div>
-            <div className="flex flex-col">
-              <span className="font-black text-xl tracking-tight text-slate-900 dark:text-white leading-none">
-                Web<span className="text-indigo-600 dark:text-indigo-400">ToolBox</span>
-              </span>
-              <span className="text-[10px] font-semibold text-slate-400 dark:text-slate-500 tracking-wider uppercase mt-0.5">
-                100% In-Browser Tools
-              </span>
-            </div>
+            <span className="font-black text-xl tracking-tight text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+              Web<span className="text-indigo-600 dark:text-indigo-400">ToolBox</span>
+            </span>
           </Link>
 
           {/* Quick Search Button (Desktop) */}
