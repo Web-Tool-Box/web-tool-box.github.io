@@ -13,8 +13,7 @@ Before submitting your site (`https://web-tool-box.github.io`) to Google AdSense
   - `Privacy Policy` (/privacy/) with explicit Google AdSense, DoubleClick DART cookie, and cookie consent disclosures.
   - `Terms of Service` (/terms/).
   - `Disclaimer` (/disclaimer/) for financial and mathematical calculators.
-  - `About Us` (/about/) stating the mission and in-browser privacy architecture.
-  - `Contact Us` (/contact/) with working submission mechanism.
+  - `Contact Link`: Direct external link to author/owner profile (https://khushwinder-dev.github.io).
 - [x] **User Value & Privacy**: All 60 tools execute 100% in-browser client-side, offering genuine utility with zero login walls or deceptive flows.
 - [x] **Clear Navigation**: Logical category hierarchy, global search (⌘K), and footer links to all sections.
 - [x] **ads.txt Configured**: `public/ads.txt` is served at the domain root with the Direct publisher declaration.

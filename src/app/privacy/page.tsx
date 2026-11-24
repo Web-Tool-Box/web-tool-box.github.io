@@ -79,7 +79,15 @@ export default function PrivacyPolicyPage() {
           <section className="space-y-2">
             <h2 className="text-lg font-bold text-slate-900 dark:text-white">5. Contact Us</h2>
             <p>
-              If you have any questions, inquiries, or feedback regarding our privacy practices, please contact us via our <Link href="/contact/" className="text-indigo-600 underline">Contact Page</Link>.
+              If you have any questions, inquiries, or feedback regarding our privacy practices, please contact us via our{' '}
+              <a
+                href="https://khushwinder-dev.github.io"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-indigo-600 underline font-medium hover:text-indigo-500"
+              >
+                Contact Page
+              </a>.
             </p>
           </section>
         </div>

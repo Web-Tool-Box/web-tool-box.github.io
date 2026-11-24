@@ -95,11 +95,6 @@ export function Footer() {
             </h3>
             <ul className="space-y-2.5 text-sm">
               <li>
-                <Link href="/about/" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
-                  About WebToolBox
-                </Link>
-              </li>
-              <li>
                 <Link href="/privacy/" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
                   Privacy Policy
                 </Link>
@@ -115,9 +110,14 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/contact/" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+                <a
+                  href="https://khushwinder-dev.github.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+                >
                   Contact & Support
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -125,7 +125,7 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
-          <p>© {currentYear} WebToolBox.dev. All rights reserved. Free & Open online utility suite.</p>
+          <p>© {currentYear} WebToolBox. All rights reserved. Free & Open online utility suite.</p>
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-1 text-slate-400">
               Built for speed & privacy

@@ -62,9 +62,14 @@ export function Header() {
             <Link href="/#popular" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
               Popular Tools
             </Link>
-            <Link href="/about/" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
-              About
-            </Link>
+            <a
+              href="https://khushwinder-dev.github.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+            >
+              Contact
+            </a>
           </div>
 
           {/* Right Actions */}
@@ -104,13 +109,6 @@ export function Header() {
             </div>
             <div className="flex flex-col gap-2 pt-1 text-sm font-medium">
               <Link
-                href="/about/"
-                onClick={() => setMobileMenuOpen(false)}
-                className="p-2 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-900"
-              >
-                About Us
-              </Link>
-              <Link
                 href="/privacy/"
                 onClick={() => setMobileMenuOpen(false)}
                 className="p-2 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-900"
@@ -124,13 +122,15 @@ export function Header() {
               >
                 Terms of Use
               </Link>
-              <Link
-                href="/contact/"
+              <a
+                href="https://khushwinder-dev.github.io"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}
                 className="p-2 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-900"
               >
                 Contact
-              </Link>
+              </a>
             </div>
           </div>
         )}
