@@ -11,7 +11,7 @@ export const siteConfig = {
     github: 'https://github.com/web-tool-box/web-tool-box.github.io',
   },
   adsense: {
-    publisherId: process.env.NEXT_PUBLIC_ADSENSE_PUB_ID || 'pub-0000000000000000',
+    publisherId: process.env.NEXT_PUBLIC_ADSENSE_PUB_ID || 'ca-pub-9193773194117466',
     slots: {
       inArticle: process.env.NEXT_PUBLIC_ADSENSE_SLOT_IN_ARTICLE || '1234567890',
       sidebar: process.env.NEXT_PUBLIC_ADSENSE_SLOT_SIDEBAR || '1234567891',

@@ -50,6 +50,7 @@ jobs:
         env:
           NEXT_PUBLIC_SITE_URL: "https://web-tool-box.github.io"
           NEXT_PUBLIC_GTM_ID: "GTM-TWGZDH52"
+          NEXT_PUBLIC_ADSENSE_PUB_ID: "ca-pub-9193773194117466"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

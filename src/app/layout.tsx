@@ -138,6 +138,14 @@ export default function RootLayout({
             `,
           }}
         />
+
+        {/* Google AdSense */}
+        <script
+          async
+          id="adsense-script"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9193773194117466"
+          crossOrigin="anonymous"
+        />
       </head>
       <body className="flex flex-col min-h-screen">
         {/* Google Tag Manager (noscript fallback) */}

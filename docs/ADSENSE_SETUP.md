@@ -23,11 +23,11 @@ Before submitting your site (`https://web-tool-box.github.io`) to Google AdSense
 
 ## 2. Environment Variables Setup
 
-When you receive your Google AdSense Publisher ID (e.g., `pub-1234567890123456`) and ad slot IDs, configure them in your environment or GitHub Actions repository secrets:
+When you configure your Google AdSense Publisher ID (`ca-pub-9193773194117466`) and ad slot IDs, configure them in your environment or GitHub Actions repository secrets:
 
 ```env
 # Google AdSense Configuration
-NEXT_PUBLIC_ADSENSE_PUB_ID=pub-1234567890123456
+NEXT_PUBLIC_ADSENSE_PUB_ID=ca-pub-9193773194117466
 NEXT_PUBLIC_ADSENSE_SLOT_IN_ARTICLE=1234567890
 NEXT_PUBLIC_ADSENSE_SLOT_SIDEBAR=1234567891
 NEXT_PUBLIC_ADSENSE_SLOT_STICKY_MOBILE=1234567892
@@ -45,10 +45,10 @@ Google requires an `ads.txt` file placed at the root of your site:
 
 File location: `https://web-tool-box.github.io/ads.txt`
 
-Update `public/ads.txt` with your real Publisher ID:
+Active `public/ads.txt`:
 
 ```text
-google.com, pub-1234567890123456, DIRECT, f08c47fec0942fa0
+google.com, pub-9193773194117466, DIRECT, f08c47fec0942fa0
 ```
 
 > **Note**: Verify that visiting `https://yourdomain.com/ads.txt` in your browser returns plain text with HTTP status 200.
