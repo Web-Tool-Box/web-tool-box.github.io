@@ -6,8 +6,8 @@ import { Globe, Twitter, Share2 } from 'lucide-react';
 export default function OpenGraphPreview() {
   const [title, setTitle] = useState('WebToolBox: 60+ Free Online Tools');
   const [desc, setDesc] = useState('100% In-Browser digital tools for developers, writers, and designers. No tracking or server uploads.');
-  const [url, setUrl] = useState('https://webtoolbox.dev');
-  const [imageUrl, setImageUrl] = useState('https://webtoolbox.dev/og-default.png');
+  const [url, setUrl] = useState('https://web-tool-box.github.io');
+  const [imageUrl, setImageUrl] = useState('https://web-tool-box.github.io/og-default.png');
   const [tab, setTab] = useState<'google' | 'twitter' | 'facebook'>('google');
 
   return (
@@ -80,7 +80,7 @@ export default function OpenGraphPreview() {
               [Social Share Image: 1200x630]
             </div>
             <div className="p-4 space-y-1">
-              <span className="text-[10px] text-slate-400 uppercase tracking-wider block">webtoolbox.dev</span>
+              <span className="text-[10px] text-slate-400 uppercase tracking-wider block">web-tool-box.github.io</span>
               <h4 className="font-bold text-sm text-slate-900 dark:text-white line-clamp-1">{title}</h4>
               <p className="text-xs text-slate-500 line-clamp-2">{desc}</p>
             </div>

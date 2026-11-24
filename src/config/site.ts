@@ -4,7 +4,7 @@ export const siteConfig = {
   name: 'WebToolBox',
   shortName: 'ToolBox',
   description: '100% Free, Private & In-Browser Online Tools for Developers, Writers, Designers & Creators. No signup required.',
-  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://webtoolbox.dev',
+  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://web-tool-box.github.io',
   ogImage: '/og-default.png',
   creator: 'WebToolBox Team',
   links: {

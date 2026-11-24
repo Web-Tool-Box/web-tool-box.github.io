@@ -22,11 +22,11 @@ export default function QrCodeScanner() {
           }
         })
         .catch(() => {
-          setScannedText('https://webtoolbox.dev (Simulated scan result)');
+          setScannedText('https://web-tool-box.github.io (Simulated scan result)');
         });
     } else {
       // Fallback preview
-      setScannedText('https://webtoolbox.dev (Sample decoded link)');
+      setScannedText('https://web-tool-box.github.io (Sample decoded link)');
     }
   };
 

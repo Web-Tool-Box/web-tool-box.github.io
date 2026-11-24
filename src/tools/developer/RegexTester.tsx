@@ -7,7 +7,7 @@ export default function RegexTester() {
   const [pattern, setPattern] = useState('[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}');
   const [flags, setFlags] = useState({ g: true, i: true, m: false, s: false, u: false });
   const [testString, setTestString] = useState(
-    'Contact our support at hello@webtoolbox.dev or team@example.org for quick assistance!'
+    'Contact our support at support@web-tool-box.github.io or team@example.org for quick assistance!'
   );
   const [error, setError] = useState<string | null>(null);
 
@@ -61,10 +61,10 @@ export default function RegexTester() {
   const handleLoadPreset = (preset: string) => {
     if (preset === 'email') {
       setPattern('[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}');
-      setTestString('Reach us at support@webtoolbox.dev or sales@domain.com');
+      setTestString('Reach us at support@web-tool-box.github.io or sales@domain.com');
     } else if (preset === 'url') {
       setPattern('https?:\\/\\/[\\w\\-\\.]+(?:\\:[0-9]+)?(?:\\/[\\w\\/\\.\\#\\?\\=\\&\\%]*)?');
-      setTestString('Visit https://webtoolbox.dev or https://google.com/search?q=regex');
+      setTestString('Visit https://web-tool-box.github.io or https://google.com/search?q=regex');
     } else if (preset === 'ipv4') {
       setPattern('\\b(?:\\d{1,3}\\.){3}\\d{1,3}\\b');
       setTestString('Server addresses: 192.168.1.1 and 10.0.0.254');

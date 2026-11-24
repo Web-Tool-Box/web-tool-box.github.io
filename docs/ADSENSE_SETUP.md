@@ -6,7 +6,7 @@ This comprehensive guide details the configuration, compliance, and launch steps
 
 ## 1. Pre-Application Compliance Checklist
 
-Before submitting your custom domain (`webtoolbox.dev`) to Google AdSense:
+Before submitting your site (`https://web-tool-box.github.io`) to Google AdSense:
 
 - [x] **Substantial Original Content**: Every tool page includes 400–800 words of unique, helpful content (How it works, step-by-step instructions, use cases, pro tips, and a 5-question FAQ).
 - [x] **Essential Legal Pages**:
@@ -35,16 +35,16 @@ NEXT_PUBLIC_ADSENSE_SLOT_STICKY_MOBILE=1234567892
 NEXT_PUBLIC_ADSENSE_ENABLED=true
 
 # Website Base URL
-NEXT_PUBLIC_SITE_URL=https://webtoolbox.dev
+NEXT_PUBLIC_SITE_URL=https://web-tool-box.github.io
 ```
 
 ---
 
 ## 3. ads.txt Verification
 
-Google requires an `ads.txt` file placed at the root of your custom domain:
+Google requires an `ads.txt` file placed at the root of your site:
 
-File location: `https://webtoolbox.dev/ads.txt`
+File location: `https://web-tool-box.github.io/ads.txt`
 
 Update `public/ads.txt` with your real Publisher ID:
 

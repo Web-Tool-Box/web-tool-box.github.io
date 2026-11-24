@@ -118,42 +118,20 @@ The new page will automatically be generated at `/tools/my-new-tool/`, linked in
 
 ## Custom Domain & DNS Setup (GitHub Pages)
 
-### 1. Configure CNAME
-Ensure `public/CNAME` contains your custom domain:
+## GitHub Pages Hosting Setup
+
+The website is hosted 100% free and static on GitHub Pages at:
 ```text
-webtoolbox.dev
+https://web-tool-box.github.io/
 ```
 
-### 2. Configure DNS Records with Your Domain Registrar
-Add the following DNS records at your domain registrar (e.g., Cloudflare, Namecheap, GoDaddy):
+### GitHub Pages Settings
+1. Navigate to your repository **Settings > Pages**.
+2. Under **Build and deployment > Source**, select **GitHub Actions**.
+3. Under **Custom domain**, ensure it is left empty (or remove any custom domain).
+4. Check **Enforce HTTPS**.
 
-#### Apex Domain (`webtoolbox.dev`)
-Add 4 `A` records pointing to GitHub Pages IP addresses:
-```text
-Type: A | Name: @ | Value: 185.199.108.153 | TTL: 3600
-Type: A | Name: @ | Value: 185.199.109.153 | TTL: 3600
-Type: A | Name: @ | Value: 185.199.110.153 | TTL: 3600
-Type: A | Name: @ | Value: 185.199.111.153 | TTL: 3600
-```
-And 4 `AAAA` records for IPv6:
-```text
-Type: AAAA | Name: @ | Value: 2606:50c0:8000::153
-Type: AAAA | Name: @ | Value: 2606:50c0:8001::153
-Type: AAAA | Name: @ | Value: 2606:50c0:8002::153
-Type: AAAA | Name: @ | Value: 2606:50c0:8003::153
-```
-
-#### Subdomain / WWW (`www.webtoolbox.dev`)
-Add a `CNAME` record pointing to your GitHub username organization:
-```text
-Type: CNAME | Name: www | Value: web-tool-box.github.io
-```
-
-### 3. Enforce HTTPS
-In your GitHub repository:
-1. Navigate to **Settings > Pages**.
-2. Confirm your custom domain is listed.
-3. Check the **Enforce HTTPS** checkbox once DNS propagation completes.
+*(Optional: If you ever decide to add a custom domain in the future, simply place a `CNAME` file in `public/` and configure your DNS A and CNAME records as documented in GitHub Pages guides).*
 
 ---
 
@@ -170,14 +148,14 @@ A GitHub Actions workflow is pre-configured in `.github/workflows/deploy.yml`:
 ## Official Launch Checklist
 
 1. [ ] **Deploy Initial Build**: Commit and push to `main` branch; verify deployment succeeds on GitHub Actions.
-2. [ ] **Verify Custom Domain & SSL**: Ensure `https://webtoolbox.dev` loads with a valid SSL certificate.
-3. [ ] **Verify ads.txt**: Check that `https://webtoolbox.dev/ads.txt` loads and returns your publisher ID.
+2. [ ] **Verify Site & SSL**: Ensure `https://web-tool-box.github.io` loads with a valid SSL certificate.
+3. [ ] **Verify ads.txt**: Check that `https://web-tool-box.github.io/ads.txt` loads and returns your publisher ID.
 4. [ ] **Submit Sitemap to Google Search Console**:
-   - Add property in [Google Search Console](https://search.google.com/search-console).
-   - Submit `https://webtoolbox.dev/sitemap.xml`.
+   - Add property `https://web-tool-box.github.io/` in [Google Search Console](https://search.google.com/search-console).
+   - Submit `https://web-tool-box.github.io/sitemap.xml`.
 5. [ ] **Submit to Bing Webmaster Tools**:
    - Import or add site in [Bing Webmaster Tools](https://www.bing.com/webmasters).
-   - Submit `https://webtoolbox.dev/sitemap.xml`.
+   - Submit `https://web-tool-box.github.io/sitemap.xml`.
 6. [ ] **Apply for Google AdSense**:
    - Follow the detailed walkthrough in [docs/ADSENSE_SETUP.md](docs/ADSENSE_SETUP.md).
 

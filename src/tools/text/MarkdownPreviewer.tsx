@@ -63,7 +63,7 @@ export default function MarkdownPreviewer() {
       `- Instant live rendered HTML\n` +
       `- Clean \`inline code\` and typography styling\n\n` +
       `> "Privacy is not an afterthought, it is the fundamental architecture."\n\n` +
-      `Visit [WebToolBox Homepage](https://webtoolbox.dev) to explore 60+ tools!`
+      `Visit [WebToolBox Homepage](https://web-tool-box.github.io) to explore 60+ tools!`
     );
   };
 

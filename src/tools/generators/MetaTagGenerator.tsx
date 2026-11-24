@@ -6,8 +6,8 @@ import { Copy, Check, Sparkles } from 'lucide-react';
 export default function MetaTagGenerator() {
   const [title, setTitle] = useState('My Online Tools - 100% Free & Private');
   const [description, setDescription] = useState('Discover fast, free, in-browser online tools with zero server processing and no registration.');
-  const [url, setUrl] = useState('https://webtoolbox.dev');
-  const [ogImage, setOgImage] = useState('https://webtoolbox.dev/og-default.png');
+  const [url, setUrl] = useState('https://web-tool-box.github.io');
+  const [ogImage, setOgImage] = useState('https://web-tool-box.github.io/og-default.png');
   const [author, setAuthor] = useState('WebToolBox Team');
   const [copied, setCopied] = useState(false);
 

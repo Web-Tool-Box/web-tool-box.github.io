@@ -5,7 +5,7 @@ import QRCode from 'qrcode';
 import { Download, Sparkles, QrCode } from 'lucide-react';
 
 export default function QrCodeGenerator() {
-  const [text, setText] = useState('https://webtoolbox.dev');
+  const [text, setText] = useState('https://web-tool-box.github.io');
   const [type, setType] = useState<'url' | 'text' | 'wifi'>('url');
   const [wifiSsid, setWifiSsid] = useState('');
   const [wifiPass, setWifiPass] = useState('');

@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { Copy, Check, Compass, Link as LinkIcon } from 'lucide-react';
 
 export default function UtmLinkBuilder() {
-  const [url, setUrl] = useState('https://webtoolbox.dev/tools/json-formatter/');
+  const [url, setUrl] = useState('https://web-tool-box.github.io/tools/json-formatter/');
   const [source, setSource] = useState('twitter');
   const [medium, setMedium] = useState('social');
   const [campaign, setCampaign] = useState('spring_launch_2026');

@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { Copy, Check, Download, Bot } from 'lucide-react';
 
 export default function RobotsTxtGenerator() {
-  const [sitemapUrl, setSitemapUrl] = useState('https://webtoolbox.dev/sitemap.xml');
+  const [sitemapUrl, setSitemapUrl] = useState('https://web-tool-box.github.io/sitemap.xml');
   const [blockAi, setBlockAi] = useState(false);
   const [disallowPaths, setDisallowPaths] = useState('/admin/\n/private/');
   const [copied, setCopied] = useState(false);
