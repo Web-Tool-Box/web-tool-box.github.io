@@ -22,7 +22,6 @@ import {
 import { siteConfig, CATEGORIES } from '@/config/site';
 import { TOOLS, getPopularTools } from '@/config/tools.config';
 import { ToolCategory, ToolDefinition } from '@/types/tool';
-import { AdSlot } from '@/components/ads/AdSlot';
 import { SearchModal } from '@/components/common/SearchModal';
 import { getFavorites, getRecentTools } from '@/lib/storage';
 
@@ -172,11 +171,6 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
-        </section>
-
-        {/* Ad Slot (In-Article Reserved Height) */}
-        <section className="max-w-5xl mx-auto px-4">
-          <AdSlot variant="in-article" />
         </section>
 
         {/* Categories & Full Directory Section */}

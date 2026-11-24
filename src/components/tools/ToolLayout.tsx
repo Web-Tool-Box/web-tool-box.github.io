@@ -19,7 +19,6 @@ import { CATEGORIES, siteConfig } from '@/config/site';
 import { TOOLS } from '@/config/tools.config';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { PrivacyBadge } from '@/components/common/PrivacyBadge';
-import { AdSlot } from '@/components/ads/AdSlot';
 import { isFavorite, toggleFavorite, addRecentTool } from '@/lib/storage';
 
 interface ToolLayoutProps {
@@ -174,10 +173,7 @@ export function ToolLayout({ tool, children }: ToolLayoutProps) {
             {children}
           </div>
 
-          {/* 3. In-Article Ad Slot (Strict reserved height, CLS safe) */}
-          <AdSlot variant="in-article" />
-
-          {/* 4. Long-form Helpful SEO Content (400 - 800 words) */}
+          {/* 3. Long-form Helpful SEO Content (400 - 800 words) */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2 space-y-10">
               {/* What It Is */}
@@ -323,11 +319,6 @@ export function ToolLayout({ tool, children }: ToolLayoutProps) {
                   Your inputs, files, and generated files are stored in temporary browser memory and never uploaded to remote servers.
                 </p>
               </div>
-
-              {/* Sidebar Ad Slot */}
-              <div className="sticky top-20">
-                <AdSlot variant="sidebar" />
-              </div>
             </div>
           </div>
 
@@ -374,9 +365,6 @@ export function ToolLayout({ tool, children }: ToolLayoutProps) {
               ))}
             </div>
           </section>
-
-          {/* Sticky Mobile Anchor Ad */}
-          <AdSlot variant="sticky-bottom-mobile" />
         </div>
       </div>
     </>

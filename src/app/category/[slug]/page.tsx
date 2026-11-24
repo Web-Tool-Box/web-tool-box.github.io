@@ -6,7 +6,6 @@ import { CATEGORIES, siteConfig } from '@/config/site';
 import { getToolsByCategory } from '@/config/tools.config';
 import { ToolCategory } from '@/types/tool';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
-import { AdSlot } from '@/components/ads/AdSlot';
 import { ArrowRight, Sparkles } from 'lucide-react';
 
 interface CategoryPageProps {
@@ -81,9 +80,6 @@ export default function CategoryPage({ params }: CategoryPageProps) {
             {cat.description} Every tool is executed 100% client-side inside your browser with complete privacy.
           </p>
         </div>
-
-        {/* Ad Slot */}
-        <AdSlot variant="in-article" />
 
         {/* Tools Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
